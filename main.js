@@ -1,121 +1,130 @@
-
 // card-1
 
-const donationBtn = document.getElementById('donation-btn').addEventListener('click',function(){
-const carentBlance =parseFloat(document.getElementById('upp-btn').innerText);
+const donationBtn = document
+  .getElementById("donation-btn")
+  .addEventListener("click", function () {
+    const carentBlance = parseFloat(
+      document.getElementById("upp-btn").innerText
+    );
 
-const inputAddMoney=getInputFildValuBy('input-add-money')
-        if (isNaN(inputAddMoney ) || inputAddMoney < 0) {
-            alert('rong')
-            
-            return
-        }
-        else{
-            const addMOney=getTextFildByid('add-money')
-            const blance = inputAddMoney + addMOney;
-            document.getElementById('add-money').innerText=blance
-            const totalBlance= carentBlance - inputAddMoney
-            
-            document.getElementById('upp-btn').innerText = totalBlance;
+    const inputAddMoney = getInputFildValuBy("input-add-money");
+    if (isNaN(inputAddMoney) || inputAddMoney < 0) {
+      alert("rong");
 
-            const myModal=document.getElementById('my_modal_1');
-                myModal.showModal();
-        }
-       
-       
-   
-    
-})
+      return;
+    }
+    const addMOney = getTextFildByid("add-money");
+    const blance = inputAddMoney + addMOney;
+    document.getElementById("add-money").innerText = blance;
+    const totalBlance = carentBlance - inputAddMoney;
+
+    document.getElementById("upp-btn").innerText = totalBlance;
+
+    const myModal = document.getElementById("my_modal_1");
+    myModal.showModal();
+
+    // addHistory(inputAddMoney, donationName);
+    // const donationName = "Aid for Injured in the Quota Movement";
+  });
 
 // card-2
 
-const donitionBtn = document.getElementById('donation-btn-2').addEventListener('click',function(){
-const carentBlance =parseFloat(document.getElementById('upp-btn').innerText);
+const donitionBtn = document
+  .getElementById("donation-btn-2")
+  .addEventListener("click", function () {
+    const carentBlance = parseFloat(
+      document.getElementById("upp-btn").innerText
+    );
 
-    const inputAddMoney=getInputFildValuBy('input-add-money-2')
-        if (isNaN(inputAddMoney ) || inputAddMoney < 0) {
-            alert('rong')
-            
-            return
-        }
-    const addMOney=getTextFildByid('add-money-2')
+    const inputAddMoney = getInputFildValuBy("input-add-money-2");
+    if (isNaN(inputAddMoney) || inputAddMoney < 0) {
+      alert("rong");
+
+      return;
+    }
+    const addMOney = getTextFildByid("add-money-2");
     const blance = inputAddMoney + addMOney;
-    document.getElementById('add-money-2').innerText=blance
-    const totalBlance= carentBlance - inputAddMoney
-    
-    document.getElementById('upp-btn').innerText = totalBlance;
-    
-    
-})
+    document.getElementById("add-money-2").innerText = blance;
+    const totalBlance = carentBlance - inputAddMoney;
+
+    document.getElementById("upp-btn").innerText = totalBlance;
+  });
 
 // card-3
 
-const donation_Btn = document.getElementById('donation-btn-3').addEventListener('click',function(){
-const carentBlance =parseFloat(document.getElementById('upp-btn').innerText);
+const donation_Btn = document
+  .getElementById("donation-btn-3")
+  .addEventListener("click", function () {
+    const carentBlance = parseFloat(
+      document.getElementById("upp-btn").innerText
+    );
 
-    const inputAddMoney=getInputFildValuBy('input-add-money-3')
-            if (isNaN(inputAddMoney ) || inputAddMoney < 0) {
-                alert('rong')
-                
-                return
-            }
-    const addMOney=getTextFildByid('add-money-3')
+    const inputAddMoney = getInputFildValuBy("input-add-money-3");
+    if (isNaN(inputAddMoney) || inputAddMoney < 0) {
+      alert("rong");
+
+      return;
+    }
+    const addMOney = getTextFildByid("add-money-3");
     const blance = inputAddMoney + addMOney;
-    document.getElementById('add-money-3').innerText=blance
-    const totalBlance= carentBlance - inputAddMoney;
-    
-    document.getElementById('upp-btn').innerText = totalBlance;
-    
-    
-})
+    document.getElementById("add-money-3").innerText = blance;
+    const totalBlance = carentBlance - inputAddMoney;
 
-// const donationBtn = document.getElementById('donation-btn').addEventListener('click',function(){
-//     const inputAddMoney = getInputFildValuBy('input-add-money')
-//     const addMOney=getTextFildByid('add-money')
-//     const blance = inputAddMoney + addMOney;
-//     // upp button drcrement part
-//     const newBlance =getTextFildByid('upp-btn')
-//     const totalBlance = newBlance - totalBlance;
-    
-    
-    
-//     document.getTextFildByid('add-money').innerText=blance;
-//     document.getTextFildByid('upp-btn').innerText=totalBlance;
+    document.getElementById("upp-btn").innerText = totalBlance;
+  });
 
-    
-// })
-// // card 2 
+const historyTabe = document.getElementById("history-tab");
 
-// const cardcontainer = document.getElementById('donation-btn-2').addEventListener('click',function(){
-//     const inputContainer = document.getElementById('input-add-money-2').value;
-//     const inpotNamber = parseFloat(inputContainer);
-//     const addMoney_2 =document.getElementById('add-money-2').innerText;
-//     console.log(addMoney_2)
-//     const addaNUM =parseFloat(addMoney_2);
-//     const mullBlance = inpotNamber + addaNUM
+const donationTabe = document.getElementById("Donation-tab");
 
-//     // upp btn part
-//     const upper =document.getElementById('upp-btn').innerText;
-//     const uparNum =parseFloat(upper)
-//     const intotal = uparNum-inpotNamber
+const historyList = document.getElementById("history-list");
+// history btn
+historyTabe.addEventListener("click", function () {
+  historyTabe.classList.add(
+    "text-white",
+    "bg-gradient-to-r",
+    "from-blue-500",
+    "to-purple-600"
+  );
 
-//     document.getElementById('add-money-2').innerText=mullBlance
-//     document.getElementById('upp-btn').innerText=intotal
-// })
-// // card 3 
+  donationTabe.classList.remove(
+    "text-white",
+    "bg-gradient-to-r",
+    "from-blue-500",
+    "to-purple-600"
+  );
 
-// const card_container = document.getElementById('donation-btn-3').addEventListener('click',function(){
-//     const input_Container = document.getElementById('input-add-money-3').value;
-//     const inpot_Namber = parseFloat(input_Container);
-//     const addMoney_3 =document.getElementById('add-money-3').innerText;
-//     const adda_NUM =parseFloat(addMoney_3);
-//     const mull_Blance = inpot_Namber + adda_NUM
+  const inputAddMoney = document.getElementById("input-add-money").value;
 
-//     // upp btn part
-//     const uppar =document.getElementById('upp-btn').innerText;
-//     const upar_Num =parseFloat(uppar)
-//     const in_total = upar_Num - inpot_Namber
+  document.getElementById("main-input").classList.add("hidden");
+  document.getElementById("history-section").classList.remove("hidden");
+  console.log(inputAddMoney);
+  const historyIteam = document.createElement("div");
+  historyIteam.className = "bg-gray-300 p-5 border mt-5 rounded-sm";
+  historyIteam.innerHTML = `
+             <h1>${inputAddMoney} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+             <p>${new Date()}</p>
+             `;
+  const historyList = document.getElementById("history-list");
+  historyList.appendChild(historyIteam);
+});
 
-//     document.getElementById('add-money-3').innerText=mull_Blance
-//     document.getElementById('upp-btn').innerText=in_total
-// })
+const donation_Tabe = document.getElementById("donationTabe");
+donationTabe.addEventListener("click", function () {
+  donationTabe.classList.add(
+    "text-white",
+    "bg-gradient-to-r",
+    "from-blue-500",
+    "to-purple-600"
+  );
+
+  historyTabe.classList.remove(
+    "text-white",
+    "bg-gradient-to-r",
+    "from-blue-500",
+    "to-purple-600"
+  );
+
+  document.getElementById("history-section").classList.add("hidden");
+  document.getElementById("main-input").classList.remove("hidden");
+});
