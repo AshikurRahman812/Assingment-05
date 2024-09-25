@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="w-11/12 mx-auto mt-5 sticky top-0 z-10 backdrop-blur-sm">
-        <nav class="flex justify-between p-5 bg-[#F9F7F3]">
+        <nav class="flex justify-between p-6 bg-[#F9F7F3]">
             <div class=" text-xl">
                 <a href="home.html"><button class="btn btn-outline btn-success">
                     Blog
@@ -26,8 +26,9 @@
             </div>
             <div class="flex lg:flex-row flex-col gap-4 ">
                 <img class="" src="img/coin.png" alt="">
-                <button id="" class="text-[#111111B3] lg:text-2xl text-sm">
-                    550BTD
+                <button class="text-[#111111B3] lg:text-2xl text-sm">
+                    <span id="upp-btn">5500</span><span>BTD</span>
+                    
                 </button>
             </div>
         </nav>
@@ -66,7 +67,10 @@
                         <div class="stats shadow">
                             <div class="stat flex">
                                 <img src="img/coin.png" alt="">
-                              <div id="" class="">10,000 BTD</div>
+                              <div class="">
+                                <span id="add-money">1000</span>
+                                <span>BDT</span>
+                              </div>
                             </div>
                         </div>
 
@@ -76,12 +80,32 @@
                                     The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster.Every contribution,<br> big or small, makes  difference.  Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.
                                 </p>
 
-                                <input id="" class="w-full p-3" type="text" placeholder="Write Donation Amount"> <br>
-                                <button class="btn btn-primary w-full mt-5 ">
-                                    Donation
-                                </button>
+                                <input id="input-add-money" class="w-full p-3" type="text" placeholder="Write Donation Amount"> <br>
+                                
+                                <!-- Open the modal using ID.showModal() method -->
+                                      <button id="donation-btn" class="btn btn-primary w-full mt-5" onclick="my_modal_1.showModal()">Donation</button>
+                                      <dialog id="my_modal_1" class="modal">
+                                        <div class="modal-box">
+                                          
+                                          <div class="card-body items-center text-center">
+                                            <h2 class="text-4xl text-black font-bold mb-2">Congrates!</h2>
+                                            <img src="img/coin.png" alt="">
+                                            <p>You Have Donated for Humankind</p>
+                                            <h1 class="font-bold text-xl">Successfully</h1>
+                                            
+                                
+                                        </div>
+                                            <form method="dialog" class="flex justify-center">
+                                              <!-- if there is a button in form, it will close the modal -->
+                                              <button class="btn bg-secondarycolor mt-4">Close confirmation</button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </dialog>
                                     
-                                    
+                                     
+                                       
+                                    </div>
                             </div>
                            
                       </div>
@@ -100,8 +124,11 @@
                         <div class="stats shadow">
                             <div class="stat flex">
                                 <img src="img/coin.png" alt="">
-                              <div id="" class="">10,000 BTD</div>
-                            </div>
+                                <div class="">
+                                  <span id="add-money-2">10000</span>
+                                  <span>BDT</span>
+                                </div>
+                              </div>
                         </div>
 
                             <div class="">
@@ -110,8 +137,29 @@
                                     The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster.Every contribution,<br> big or small, makes  difference.  Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.
                                 </p>
 
-                                <input id="" class="w-full p-3" type="text" placeholder="Write Donation Amount"> <br>
-                                <button class="btn btn-primary w-full mt-5">Donation</button>
+                                <input id="input-add-money-2" class="w-full p-3" type="text" placeholder="Write Donation Amount"> <br>
+                                 <!-- Open the modal using ID.showModal() method -->
+                                 <button id="donation-btn-2" class="btn btn-primary w-full mt-5" onclick="my_modal_1.showModal()">Donation</button>
+                                 <dialog id="my_modal_2" class="modal">
+                                   <div class="modal-box">
+                                     
+                                     <div class="card-body items-center text-center">
+                                       <h2 class="text-4xl text-black font-bold mb-2">Congrates!</h2>
+                                       <img src="img/coin.png" alt="">
+                                       <p>You Have Donated for Humankind</p>
+                                       <h1 class="font-bold text-xl">Successfully</h1>
+                                       
+                           
+                                   </div>
+                                       <form method="dialog" class="flex justify-center">
+                                         <!-- if there is a button in form, it will close the modal -->
+                                         <button class="btn bg-secondarycolor mt-4">Close confirmation</button>
+                                       </form>
+                                     </div>
+                                   </div>
+                                 </dialog>
+                               
+                                
                             </div>
                            
                       </div>
@@ -129,7 +177,10 @@
                         <div class="stats shadow">
                             <div class="stat flex">
                                 <img src="img/coin.png" alt="">
-                              <div id="" class="">10,000 BTD</div>
+                                <div class="">
+                                  <span id="add-money-3">10000</span>
+                                  <span>BDT</span>
+                                </div>
                             </div>
                         </div>
 
@@ -139,8 +190,28 @@
                                     The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster.Every contribution,<br> big or small, makes  difference.  Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.
                                 </p>
 
-                                <input id="" class="w-full p-3" type="text" placeholder="Write Donation Amount"> <br>
-                                <button class="btn btn-primary w-full mt-5">Donation</button>
+                                <input id="input-add-money-3" class="w-full p-3" type="text" placeholder="Write Donation Amount"> <br>
+                                 <!-- Open the modal using ID.showModal() method -->
+                                 <button id="donation-btn-3" class="btn btn-primary w-full mt-5" onclick="my_modal_1.showModal()">Donation</button>
+                                 <dialog id="my_modal_2" class="modal">
+                                   <div class="modal-box">
+                                     
+                                     <div class="card-body items-center text-center">
+                                       <h2 class="text-4xl text-black font-bold mb-2">Congrates!</h2>
+                                       <img src="img/coin.png" alt="">
+                                       <p>You Have Donated for Humankind</p>
+                                       <h1 class="font-bold text-xl">Successfully</h1>
+                                       
+                           
+                                   </div>
+                                       <form method="dialog" class="flex justify-center">
+                                         <!-- if there is a button in form, it will close the modal -->
+                                         <button class="btn bg-secondarycolor mt-4">Close confirmation</button>
+                                       </form>
+                                     </div>
+                                   </div>
+                                 </dialog>
+                               
                             </div>
                            
                       </div>
@@ -163,7 +234,7 @@
     </div>
         </main>
     
-    <script src="function.js"></script>
+    
     <script src="main.js"></script>
 </body>
 </html>
